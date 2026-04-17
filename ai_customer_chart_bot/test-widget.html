@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test - AI Chatbot Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            color: #1e293b;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #fff;
+            padding: 2rem 2rem 3rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            opacity: .9;
+            font-size: 1rem;
+        }
+        .content {
+            max-width: 720px;
+            margin: -2rem auto 0;
+            padding: 0 1.5rem 3rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,.08);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .hint {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-top: 2rem;
+        }
+        .hint strong { color: #334155; }
+        .hint code {
+            background: #e2e8f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.8125rem;
+        }
+        #acb-widget{
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Demo Company</h1>
+        <p>Your trusted partner for quality products</p>
+    </header>
+
+    <main class="content">
+        <div class="card">
+            <span class="badge">Live Demo</span>
+            <h2>Welcome to our site</h2>
+            <p>This is a sample page for testing the AI Chatbot widget. Click the chat button in the bottom-right corner to start a conversation.</p>
+            <p>The chatbot is trained on your FAQs and documents. Try asking about business hours, shipping, or returns.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Products</h2>
+            <p>We offer a wide range of electronics, home & garden items, and clothing. Browse our catalog to find the perfect products for your needs.</p>
+            <p>Free shipping on orders over $50. Standard delivery takes 3-5 business days.</p>
+        </div>
+
+        <div class="card">
+            <h2>Need Help?</h2>
+            <p>Our AI assistant is ready to help 24/7. Ask questions about our products, shipping, returns, or contact support.</p>
+        </div>
+
+        <div class="hint">
+            <strong>Widget test:</strong> This page loads the widget with <code>bot_id=1</code>. Replace with your bot ID from the embed code in the admin panel.
+        </div>
+    </main>
+
+    <script src="http://localhost/ai_customer_chart_bot/widget/chat-widget.js?bot_id=1"></script>
+</body>
+</html>
